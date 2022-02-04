@@ -1,6 +1,6 @@
 # Probot & AWS Lambda example
 
-This repository is an example of how to deploy the "Hello, World" of probot apps to [AWS Lambda](https://aws.amazon.com/lambda/) using [serverless](https://www.serverless.com/).
+This repository is an example of how to deploy the "Hello, World" of probot apps to [AWS Lambda](https://aws.amazon.com/lambda/) using [aws sam](https://aws.amazon.com/serverless/sam/).
 
 ## Local setup
 
@@ -19,26 +19,27 @@ npm start
 Follow the instructions to register a new GitHub app.
 
 ## Deployment
-
-In order to deploy the app from you local environment, follow the [Serverless user guide for AWS](https://www.serverless.com/framework/docs/providers/aws/guide/quick-start/).
-
-If you use this example as a template, make sure to update [`serverless.yml`](serverless.yml) and set new values for
-
-- `service`
-- `app`
-- `org`
-
-Make sure to create the following parameters on [https://app.serverless.com](https://app.serverless.com):
-
+Get the following details about your GitHub app:
 - `APP_ID`
-- `PRIVATE_KEY`
 - `WEBHOOK_SECRET`
+- `PRIVATE_KEY`
 
-For continuous deployment via GitHub action, copy [this repository's deploy workflow](.github/workflows/deploy.yml) and create the following secrets:
+1. Setup your aws cli creds
+1. set your aws profile by running `export AWS_PROFILE=<profile>`
+1. run `sam build`
+1. run `sam deploy --guided`
 
-1. `SERVERLESS_ACCESS_KEY` - You can create a Serverless access key at `https://app.serverless.com/<your org>/settings/accessKeys`
-2. `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY` - you will likely find your AWS credentials in `~/.aws/credentials`
+Subsequent deploys to the same stack to the default environment...
+1. run `sam build`
+1. run `sam deploy`
 
+## Debugging locally
+1. Populate the values in vars.json with the ones specific for your GitHub app. For the `PRIVATE_KEY` replace newlines with `\\n` to make the string value a single line.
+1. run `sam build`
+1. Run sam local via bash...
+```
+sam local invoke -d 9999 webhooks -n vars.json -e events/event.json
+```
 ## License
 
 [ISC](LICENSE)
