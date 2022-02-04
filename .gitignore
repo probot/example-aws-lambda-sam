@@ -4,3 +4,4 @@ node_modules
 # aws sam stuff
 .aws-sam
 samconfig.toml
+vars.json
