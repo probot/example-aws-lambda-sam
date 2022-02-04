@@ -34,12 +34,10 @@ Subsequent deploys to the same stack to the default environment...
 1. run `sam deploy`
 
 ## Debugging locally
-1. Populate the values in vars.json with the ones specific for your GitHub app. For the `PRIVATE_KEY` replace newlines with `\\n` to make the string value a single line.
-1. run `sam build`
-1. Run sam local via bash...
-```
-sam local invoke -d 9999 webhooks -n vars.json -e events/event.json
-```
+1. Point your GitHub app to your local using something like smee.io
+1. Copy .env-sample to .env and populate with values specific for your GitHub app. For the `PRIVATE_KEY` replace newlines with `\\n` to make the string value a single line.
+1. From the VSCode `RUN AND DEBUG` menu select `Launch Probot` and click the green arrow to start debugging.
+
 ## License
 
 [ISC](LICENSE)
