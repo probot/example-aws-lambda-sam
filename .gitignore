@@ -6,3 +6,5 @@ node_modules
 samconfig.toml
 vars.json
 .env
+coverage
+.nyc_output
