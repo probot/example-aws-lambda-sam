@@ -1,7 +1,0 @@
-{
-    "webhooks": {
-        "APP_ID": "",
-        "WEBHOOK_SECRET": "",
-        "PRIVATE_KEY": ""
-    }
-}
