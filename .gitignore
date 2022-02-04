@@ -1,5 +1,6 @@
 # package directories
 node_modules
 
-# Serverless directories
-.serverless
+# aws sam stuff
+.aws-sam
+samconfig.toml
