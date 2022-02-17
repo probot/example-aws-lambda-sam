@@ -43,7 +43,7 @@ There are two options to debug locally.
 ### Debug by launching probot locally and sending it a payload 
 
 1. Point your GitHub app to your local using something like smee.io
-1. Copy .env-sample to .env and populate with values specific for your GitHub app. For the `PRIVATE_KEY` replace newlines with `\\n` to make the string value a single line.
+1. Copy .env-sample to .env and populate with values specific for your GitHub app. [See here for more details](https://probot.github.io/docs/configuration/).
 1. From the VSCode `RUN AND DEBUG` menu select `Launch Probot` and click the green arrow to start debugging.
 
 ## License
