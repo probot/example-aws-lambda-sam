@@ -32,3 +32,7 @@ Resources:
           APP_ID: !Ref githubAppId
           WEBHOOK_SECRET: !Ref githubWebhookSecret
           PRIVATE_KEY: !Ref githubPrivateKey
+Outputs:
+  WebhooksUrl:
+    Description: "Endpoint URL"
+    Value: !Sub "https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com/"
