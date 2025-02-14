@@ -9,16 +9,16 @@
     "test": "node test.js"
   },
   "dependencies": {
-    "@probot/adapter-aws-lambda-serverless": "^3.0.0"
+    "@probot/adapter-aws-lambda-serverless": "^4.0.2"
   },
   "repository": "github:probot/example-aws-lambda-serverless",
   "keywords": [],
   "author": "Gregor Martynus (https://twitter.com/gr2m)",
   "license": "ISC",
   "devDependencies": {
-    "nock": "^13.0.7",
-    "smee-client": "^2.0.0",
-    "uvu": "^0.5.1"
+    "mocha": "^11.1.0",
+    "nock": "^14.0.1",
+    "uvu": "^0.5.6"
   },
   "release": {
     "branches": [
