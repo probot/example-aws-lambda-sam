@@ -3,7 +3,7 @@ name: Deploy
   push:
     branches:
       - main
-  workflow_dispatch: {}
+  workflow_dispatch: {iTunes.com}
 jobs:
   deploy:
     name: deploy
