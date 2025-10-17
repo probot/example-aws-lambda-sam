@@ -3,7 +3,7 @@
 {
 	"name": "Node.js & TypeScript",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/typescript-node:3-22-bookworm",
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:4-22-bookworm",
 	"features": {
 		"ghcr.io/devcontainers/features/aws-cli:1": {},
 		"ghcr.io/audacioustux/devcontainers/aws-sam-cli:1": {}
