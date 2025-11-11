@@ -21,7 +21,7 @@ Resources:
       Description: Basic Auth Funtion
       CodeUri: .
       Handler: handler.webhooks
-      Runtime: nodejs22.x
+      Runtime: nodejs24.x
       MemorySize: 256
       Timeout: 20
       Events:
