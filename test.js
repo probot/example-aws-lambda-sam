@@ -1,7 +1,7 @@
 const { suite } = require("uvu");
 const assert = require("uvu/assert");
 
-const nock = require("nock");
+const { default: nock } = require("nock");
 nock.disableNetConnect();
 
 const {
