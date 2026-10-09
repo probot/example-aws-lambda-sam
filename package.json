@@ -17,7 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "mocha": "^12.0.0",
-    "nock": "^14.0.1",
+    "nock": "^15.0.0",
     "smee-client": "^5.0.0",
     "uvu": "^0.5.6"
   },
