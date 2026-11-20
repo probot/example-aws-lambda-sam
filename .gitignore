@@ -8,3 +8,4 @@ vars.json
 .env
 coverage
 .nyc_output
+.envrc
